@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Condições</title>
+  <style>
+    p{
+      font-family: verdana;
+    }
+
+    h3 {
+      font-family: verdana;
+    }
+
+    body {
+     background-image: url("https://camo.githubusercontent.com/ba5bcff686c7f625fcc93eb035a779326e5c9524/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f3130323470782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67");
+  background-color: rgba(255, 255, 255, 0.7);
+   background-blend-mode: overlay;
+    }
+
+    .topnav {
+      position: relative;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    /* Centered section inside the top navigation */
+    .topnav-centered a {
+      float: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Right-aligned section inside the top navigation */
+    .topnav-right {
+      float: right;
+    }
+
+    /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+    @media screen and (max-width: 600px) {
+      .topnav a, .topnav-right {
+        float: none;
+        display: block;
+      }
+      .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+
+    td {
+        border: 1px solid black;
+    }
+
+    code {
+      /*font-family: monospace;
+      color: yellow;
+      background-color: #263238;
+      padding: 3px;
+      line-height: 1.5;
+      font-size: 105%;
+      text-align: left;*/
+
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      border-left: 3px solid orange;
+      border-radius: 5px;
+      color: #666;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: 1em 1.5em;
+      display: block;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<h1>Condições</h1>
+<div class="topnav">
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\home.html">Home</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\inpex.html">Instalação do python</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\dados primitivos.html">Dados Primitivos</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\variaveis.html">Variaveis</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\condicao.html">Condições</a>
+</div>
+
+
+
+<p>As estruturas condicionais estão presentes em quase todas das principais linguagens de programação existentes no mercado.</p>
+<p>Em Python, devido sua facilidade de desenvolvimento dos códigos, a implementação das condições <b>if</b>, <b>else</b> e <b>elif</b> seguem essa mesma linha.</p>
+<p>O significado para cada uma dessas estruturas de condição é de que, avaliando uma determinada expressão e de acordo com seu resultado, conseguimos executar uma determinada ação.</p>
+<p>Esses três tipos de condições podem ser classificadas como Estruturas condicionais <b>Simples</b>, <b>composta</b> e <b>aninhada</b>.</p>
+
+<hr>
+
+<h3>Estrutura condicional Simples</h3>
+
+<p>Para a estrutura condicional do tipo <b>simples</b>, utilizamos o comando <b>if</b>.</p>
+<p>Um exemplo de uso do <b>if</b> se aplica abaixo:</p>
+
+<pre>
+  <code>
+    idade: 18
+    if idade < 10:
+      print('Você não possui acesso!')
+  </code>
+</pre>
+
+<p>Neste caso, antes de tudo, acabamos por especificar o valor da variável <b>idade</b> em <b>18</b>.
+<br>
+Em seguida, inserimos o comando <b>if</b>, e nela estabelecemos a seguinte condição:
+<br>
+<br>
+<b>SE</b> o valor da variável <b>idade</b> for <b>MENOR</b> que o número <b>10</b>
+<br>
+Então o sistema executa a ação representada na terceira linha, no caso, exibindo a frase "Você não possui acesso!" em tela.</p>
+<p>Uma das facilitações da linguagem de programação em Python é poder inserir, na Estrutura Condicional Simples, diversos <b>if</b> dentro de da mesma estrutura.
+<br>
+O resultado é o seguinte:</p>
+
+<pre>
+  <code>
+    idade: 18
+    if idade < 18:
+      print('Você não possui acesso!')
+    if idade > 18:
+      print('Você possui acesso!')
+  </code>
+</pre>
+
+<p>No caso desta estrutura, estabelecemos que <b>SE</b> o valor da variável <b>idade</b> for <b>MENOR</b> do que o número <b>10</b>, ele executa uma ação, exibindo a frase "Você não possui acesso!" em tela.
+<br>
+Se o valor da variável <b>idade</b> não se aplicar a primeira condição, a segunda condição é executada.
+<br>
+No caso, <b>SE</b> o valor da variável <b>idade</b> for <b>MAIOR</b> do que o número <b>18</b> a frase "Você possui acesso!" é exibida em tela.</p>
+
+<hr>
+
+<h3>Estrutura condicional composta</h3>
+<p>Para a estrutura condicional do tipo <b>composta</b>, utilizamos o comando <b>if</b>, seguido do comando <b>else</b>.
+<br>
+O comando <b>if</b> executa uma ação quando a condição for verdadeira e, se a mesma for falsa, o comando <b>else</b> executa uma outra ação.</p>
+<p>Um exemplo do uso da estrutura composta, utilizando o <b>if-else</b> se aplica abaixo:</p>
+<pre>
+  <code>
+    valor = 1
+    if valor < 0:
+      print ('O valor é menor que zero')
+    else:
+      print ('O valor é maior que zero')
+  </code>
+</pre>
+
+<p>Neste caso, o comando <b>if</b> verifica o valor da variável "<b>valor</b>" e, <b>SE</b> a condição for verdadeira, ele executa a ação na linha abaixo, exibindo a frase "O valor é menor que zero" em tela.
+<br>
+Caso a condição for falsa, o comando <b>else</b> executa a linha abaixo, exibindo a frase "O valor é maior que zero" em tela.</p>
+
+<hr>
+
+<h3>Estrutura condicional aninhada</h3>
+<p>Ao utilizarmos as Estruturas condicionais aninhadas, utilizamos um tipo diferente do <b>if</b> e do <b>else</b>, inserindo entre os dois comandos o comando <b>elif</b></p>
+
+<p>O <b>elif</b> funciona de uma maneira semelhante ao <b>if</b>. Sua diferença é que o mesmo pode ser usado diversas vezes dentro de uma estrutura condicional, executando o comando seguinte se sua ação for verdadeira e senão, passando para o próximo <b>elif</b> sequencialmente até chegar ao comando <b>else</b>.</p>
+
+<p>Um exemplo de como utilizar o <b>elif</b> está sendo exemplificado abaixo:</p>
+
+<pre>
+  <code>
+    if soma > 0:
+     print ('Maior que Zero.')
+    elif soma == 0:
+         print ('Igual a Zero.')
+    else:
+     print ('Menor que Zero.')
+  </code>
+</pre>
+
+<p>Neste caso, o <b>if</b> verifica o valor de <b>soma</b> e, se a mesma for MAIOR que 0, a frase "Maior que Zero." é exibida em tela.
+<br>
+Em seguida, no <b>elif</b> é verificado se o valor de soma é IGUAL a 0 e se verdadeiro, a frase "Igual a Zero." é exibida em tela.
+<br>
+Se nenhuma dessas condições for verdadeira, o comando <b>else</b> é executado, exibindo a frase "Menor que Zero." em tela.</p>
+<br>
+<p>Abaixo, podemos verificar alguns tipos de simbolos condicionais que podem ser utilizados em condições, seguidas de suas definições.</p>
+
+<table>
+  <tbody></tbody>
+    <tr>
+      <td>Símbolo</td>
+      <td>Significado</td>
+    </tr>
+    <tr>
+      <td>==</td>
+      <td>Igual</td>
+    </tr>
+    <tr>
+      <td>!=</td>
+      <td>Diferente</td>
+    </tr>
+    <tr>
+      <td> > </td>
+      <td>Maior que</td>
+    </tr>
+    <tr>
+      <td> < </td>
+      <td>Menor que</td>
+    </tr>
+    <tr>
+      <td> >= </td>
+      <td>Maior ou igual que</td>
+    </tr>
+    <tr>
+      <td> <= </td>
+      <td>Menor ou igual que</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+</body>
+<p lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    p{
+    font-family:verdana;
+    }
+    body {
+  background-image: url("https://camo.githubusercontent.com/ba5bcff686c7f625fcc93eb035a779326e5c9524/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f3130323470782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67");
+  background-color: rgba(255, 255, 255, 0.7);
+   background-blend-mode: overlay;
+  }
+    .topnav {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+    </style>
+
+
+</head>
+
+<h1>Dados Primitivos</h1>
+<div class="topnav">
+
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\home.html">Home</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\inpex.html">Instalação do python</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\dados primitivos.html">Dados Primitivos</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\variaveis.html">Variaveis</a>
+  <a href="C:\Users\Victor Assimen\PycharmProjects\pythonProject1\Trabalhos da facul\condicao.html">Condições</a>
+</div>
+      <h3>
+    Nesse artigo iremos destacar os principais tipos primitivos usados no pyton:
+
+      </h3>
+      <h1>
+    -Int()
+      </h1>
+
+
+        <p>
+            <b>
+             Sintaxe: classe int( [x] )
+            </b>
+        </p>
+<p>Veja na representação abaixo a aplicação correta da classe de números inteiros.</p>
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-16.png" >
+<p>
+Analisando o código acima, entendemos que:
+</p>
+
+<p>
+A soma dos valores foi possível devido a aplicação da classe Int ao código, vamos ver a diferença desse mesmo código, mas sem a classe int.
+</p>
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-17.png" >
+<p>
+Analisando o código acima entendemos que:
+</p>
+
+<p>A variável soma concatenou os valores das variáveis “valor1” e “ valor2”, quando não há uma declaração da classe int no código, o Python entendeu que trata-se que os valores pertencem a classe str (strings).
+
+    Utilizando o mesmo código, podemos converter uma classe str para classe int, veja como fica no código abaixo.</p>
+
+<p>Utilizando o mesmo código, podemos converter uma classe str para classe int, veja como fica no código abaixo.</p>
+
+    <img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-18.png">
+
+
+
+<p>Analisando o código acima entendemos que:</p>
+<p>Os valores das variáveis “valor1” e “valor2” foram convertidos para a classe int, e o Python entendeu que os valores são números inteiros e fez a soma.</p>
+<p>
+“>>> soma = int(valor1) + int(valor2)”.
+</p>
+
+
+<h1> -float() </h1>
+
+
+<p>
+<b>
+        Sintaxe: classe int( [x] )
+    </b>
+</p>
+
+
+
+<p>Também conhecida como números reais, a aplicação do float em códigos servem para declarar a entrada de dados, ou a conversão para casas decimais após o ponto, conforme o exemplo a seguir.</p>
+
+<p>Exemplo: 1.0000</p>
+
+<p>Para melhor representar essa aplicação, a tabela abaixo mostra as diferenças entre as classes float e int, veja:</p>
+
+<p>Classe float: | 1.0 | -4567.3 | 8.9 |.</p>
+
+<p>Classe int:    | 1 | -4567 | 8 |.</p>
+
+<p>Vamos aplicar aos códigos abaixo as seguintes aplicações, primeiro o código receberá a informação com a classe float declarada, em segundo o código receberá a informação com a classe int declarada e converterá para a classe float.
+</p>
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-19.png">
+<p> Analisando o código abaixo entendemos que:</p>
+
+<p>
+O código recebeu a entrada de dados na classe float, vez a soma e retornou o resultado na classe float. Também é possível nesse mesmo código receber uma entrada de números inteiros, veja o resultado no código abaixo.
+</p>
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-20.png">
+
+<p>
+No código abaixo vamos ver a entrada declarada para a classe int e a conversão para a classe float, utilizando o mesmo código.
+</p>
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-21.png">
+<h1> -str() </h1>
+
+
+<p>
+<b>
+        Sintaxe: str ( ‘x’ ) ou str (‘ ‘) que corresponde valor de string vazio.
+    </b>
+</p>
+
+<p>
+São várias as opções tratamento para informações declaradas como classe str(), nesse artigo vamos tratar o entendimento da string, logo em outros artigos vamos detalhar todas as opções disponíveis no Python.
+</p>
+
+<p>
+No código abaixo vamos representar a entrada de dados em declaração da classe str() e, vamos consultar o Python perguntando qual é a classe que ele identificou.
+</p>
+
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-22.png">
+
+<p>
+Analisando o código acima entendemos que:
+</p>
+
+<p>
+Mesmo sem declarar a classe str, o Python adicionou a variável “nome” o valor da classe str(), isto porque, como não foi declarado nenhuma classe, ele adicionou a classe str().
+</p>
+
+<p>
+Nesse exemplo foi adicionado um nome, mas poderia ser qualquer valor, veja o exemplo abaixo onde o valor digitado foi uma sequência de números e letras.
+</p>
+
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-23.png">
+
+    <h1> -bool() </h1>
+<p>
+    <b>Sintaxe: a >= b (o retorno será True ou False).</b>
+</p>
+<p>Antes de utilizarmos situações booleanas e nosso código de exemplo, vou representar abaixo todas opções de comparações, veja:</p>
+
+<p>Operação / significado</p>
+
+<ol><li>&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estritamente
+menor que.</li>
+    <li>&lt;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menor
+ou igual.</li>
+<li>&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estritamente
+maior que.</li>
+<li>&gt;= &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maior
+ou igual.</li>
+    <li>==&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Igual.</li>
+<li>1=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Não
+igual(diferente).</li>
+    <li>Is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identidade
+do objeto.</li>
+    <li>Is not&nbsp;&nbsp;&nbsp; Identidade
+de objeto negada.</li>
+</ol>
+<p>Entendendo as opções de comparações disponíveis, vamos aplicar na prática.</p>
+<img src="https://explorandoti.com.br/wp-content/uploads/2019/09/image-24.png">
+
+<h3>Tabela de Tipos primitivos e aplicações:</h3>
+<p>Int()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,
+23, -89 e 0.</p>
+<p>Float()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.0,
+23.5, -89.6587 e 0.0.</p>
+<p>Str()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ‘Olá’,
+‘-89,6587 e ‘S1i2l3v4i5o6’.</p>
+<p>Bool() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; True ou False</p>
+
+<h1>Fonte de pesquisa</h1>
+<p>https://python.org</p>
+<p>https://explorandoti.com.br/tipos-primitivos-e-suas-aplicacoes-no-python3/</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
