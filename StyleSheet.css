@@ -1,54 +1,77 @@
 p{
   font-family:verdana;
-
-  }
-
-    body {
-  background-image: url("https://camo.githubusercontent.com/ba5bcff686c7f625fcc93eb035a779326e5c9524/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f3130323470782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67");
-  background-color: rgba(255, 255, 255, 0.7);
-   background-blend-mode: overlay;
-  }
-  /* Add a black background color to the top navigation */
-.topnav {
-  position: relative;
-  background-color: #333;
-  overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+body {
+  background-image: url("https://camo.githubusercontent.com/ba5bcff686c7f625fcc93eb035a779326e5c9524/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f3130323470782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67");
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
+}
+
+.corpo {
+  margin: 0% 5% 0% 5%;
+}
+
+  /* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  font-size: 16px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
@@ -65,32 +88,42 @@ p{
     transform: none;
   }
 }
-  code {
-      font-family: monospace;
-      color: yellow;
-      background-color: #263238;
-      padding: 3px;
-      line-height: 1.5;
-      font-size: 105%;
-      text-align: left;
 
-      background: #f4f4f4;
-      border: 1px solid #ddd;
-      border-left: 3px solid orange;
-      border-radius: 5px;
-      color: #666;
-      font-family: monospace;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 1.6em;
-      max-width: 100%;
-      overflow: auto;
-      padding: 1em 1.5em;
-      display: block;
-      word-wrap: break-word;
-    }
+pre {
+  position: relative;
+  margin-right: 75%;
+}
 
-    td {
-        border: 1px solid black;
-    }
+code {
+  font-family: monospace;
+  color: yellow;
+  background-color: #263238;
+  padding: 3px;
+  line-height: 1.5;
+  font-size: 105%;
+  text-align: left;
 
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid orange;
+  border-radius: 5px;
+  color: #666;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+td {
+  border: 1px solid black;
+}
+
+table {
+  background-color: white;
+  border: 1px solid black;
+}
