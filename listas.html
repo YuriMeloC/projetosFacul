@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Listas</title>
+  <link href="StyleSheet.css" rel="stylesheet">
+</head>
+
+<h1>Listas</h1>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="index.html">Instalação do python</a>
+  <a href="dados primitivos.html">Dados Primitivos</a>
+  <a href="variaveis.html">Variaveis</a>
+  <a href="condicao.html">Condições</a>
+  <a href="listas.html">Listas</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="https://www.google.com.br">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="corpoListas">
+
+<h2>O que são listas?</h2>
+
+<p>Listas são conjuntos estruturais de dados organizados de forma linear dentro da mesma, podendo ser acessados diretamente utilizando um índice, cujo número representa a sua posição dentro daquela lista em que a mesma faz parte.</p>
+ 
+<h2>Como criar uma lista?</h2>
+
+<p>Para criar uma lista, utilizamos os símbolos de "colchetes", sendo eles "<b>[</b>" e "<b>]</b>".
+<br>
+Dentro do código, seria algo similar a:</p>
+
+<pre>
+    <code>
+    	lista = []
+    </code>
+</pre>
+
+<p>Para inserir dados dentro de uma lista, preenchemos, dentro dos <b>colchetes</b>, cada um dos itens da lista, cada um deles dentro de aspas simples (<b>'</b>) e separados por vírgula.
+<br>
+Dentro do Python, seria algo similar a:</p>
+
+<pre>
+    <code>
+    	lista = []
+    	lista = ['tigre', 'onça', 'leão', 123, 456]
+    </code>
+</pre>
+
+<p>A pergunta que fica agora é: como podemos, de alguma forma, ler estes dados presentes dentro de uma lista?</p>
+
+<hr>
+
+<p>Antes de tudo, deve-se ficar claro que em uma lista, cada um dos itens presentes na mesma possui um índice, servindo para identificá-los. Na teoria, seria como no código abaixo:</p>
+
+<pre>
+    <code>
+    	lista = []
+    	lista = ['tigre', 'onça', 'leão', 123, 456]
+    		    0        1       2     3    4
+    </code>
+</pre>
+
+<p>Desta forma, a palavra "<b>tigre</b>" irá receber, teoricamente, o Índice de número 0. 
+<br>
+A palavra "<b>onça</b>" recebe o índice de número 1.
+<br>
+A palavra "<b>leão</b>" recebe 2, e assim por diante, até o último item da lista.</p>
+
+<p>Caso queiramos saber qual o item de uma lista nós inserimos, especificamos qual lista queremos identificar um valor, e dentro dos colchetes, colocamos o índice desejado.
+<br>
+Tendo como referência a lista acima, caso queiramos saber qual valor tem o índice de número <b>2</b>, no código, ficaria da seguinte forma:
+</p>
+
+<pre>
+    <code>
+    	lista[2]
+    </code>
+</pre>
+
+<p>Neste caso, o valor retornado seria equivalente a "<b>leão</b>", pois o mesmo possui o índice de número 2 dentro da nossa lista.</p>
+
+<p>Através da função <b>len()</b>, podemos identificar também qual o tamanho da lista que inserirmos dentro dos parênteses.
+<br>
+No código, ficaria desta forma:</p>
+
+<pre>
+    <code>
+    	len(lista)
+    </code>
+</pre>
+
+<hr>
+
+<h2>Métodos das Listas</h2>
+
+<p>Aqui, veremos <b>métodos</b> possíveis de realizarmos com as listas que criamos. Com elas, conseguimos incluir ou remover elementos de uma lista, por exemplo.</p>
+
+<p>Temos diversos tipos de métodos, mostrados na tabela abaixo:</p>
+
+<table>
+	<tbody>
+		<tr>
+			<th>NomeDoMetodo</th>
+			<th>Funcionalidades</th>
+		</tr>
+		<tr>
+			<td>append()</td>
+			<td>Insere item no final da lista</td>
+		</tr>
+		<tr>
+			<td>insert()</td>
+			<td>Insere na tabela de acordo<br>
+			    com o índice</td>
+		</tr>
+		<tr>
+			<td>pop()</td>
+			<td>Remove último item da lista</td>
+		</tr>
+		<tr>
+			<td>remove(<i>item</i>)</td>
+			<td>Remove o item do índice<br>
+			    indicado</td>
+		</tr>
+		<tr>
+			<td>sort()</td>
+			<td>Ordena os itens da lista</td>
+		</tr>
+		<tr>
+			<td>reverse()</td>
+			<td>Inverte as posições da lista</td>
+		</tr>
+			<td>count()</td>
+			<td>Retorna o número de vezes que<br>
+			    o item aparece na lista</td>
+		</tr>
+	</tbody>
+</table>
+<br><br>
+<p>Para conseguirmos utilizar um método com uma lista, faremos da seguinte forma:</p>
+
+<pre>
+    <code>
+    	lista.<i>nomeDoMetodo()</i>
+    </code>
+</pre>
+
+
+
+</div>
+
+</body>
+</html>

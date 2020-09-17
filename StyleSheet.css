@@ -12,6 +12,40 @@ body {
   margin: 0% 5% 0% 5%;
 }
 
+.corpoListas {
+  margin: 0% 5% 0% 5%;
+}
+
+.corpoListas pre {
+  position: relative;
+  margin-right: 68%;
+}
+
+.corpoListas code {
+  font-family: monospace;
+  color: yellow;
+  background-color: #263238;
+  padding: 3px;
+  line-height: 1.5;
+  font-size: 105%;
+  text-align: left;
+
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid orange;
+  border-radius: 5px;
+  color: #666;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
   /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
@@ -120,6 +154,10 @@ code {
 }
 
 td {
+  border: 1px solid black;
+}
+
+th {
   border: 1px solid black;
 }
 
